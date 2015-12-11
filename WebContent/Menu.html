@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bienvenido al Ajedrez!</title>
+
+<script type="text/javascript" lang="JavaScript">
+function nuevaPartida(){
+	var formuMenu=document.getElementById("formMenu");
+	formuMenu.action="ServletNuevo";
+	formuMenu.submit();	
+}
+function continuarPartida(){
+	var formuMenu=document.getElementById("formMenu");
+	formuMenu.action="ServletContinuar";
+	formuMenu.submit();	
+}
+
+
+</script>
+
+
+</head>
+<body>
+<form action="" method="POST" id="formMenu" style="text-align: center">
+<table style="text-align:center; ">
+<tr>
+<td colspan="2" style="font-weight: bold;size: 30px">AJEDREZ EN WEB</td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td><input type="button" value="Nueva Partida" onclick="nuevaPartida()"></td>
+<td><input type="button" value="Continuar Partida" onclick="continuarPartida()"></td>
+</tr>
+
+
+
+
+</table>
+
+
+
+
+
+</form>
+
+
+</body>
+</html>
